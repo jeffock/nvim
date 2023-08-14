@@ -14,11 +14,11 @@ return require('packer').startup(function(use)
   }
 
   use({
-	'catppuccin/nvim', as = 'catppuccin',
+	'folke/tokyonight.nvim', as = 'tokyonight',
 	config = function()
-		vim.cmd('colorscheme catppuccin')
+		vim.cmd('colorscheme tokyonight')
 	end
-})
+  })
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('theprimeagen/harpoon')
